@@ -175,6 +175,16 @@ tr.total td{background:var(--green-tint);font-weight:700;border-bottom:0}
 .contact-list a{color:#fff;text-decoration:none;font-weight:600}
 .contact-list a:hover{color:var(--green)}
 
+/* Social icons */
+.follow-label{font-family:var(--head);font-weight:600;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#C9CACB;margin:36px 0 12px}
+.socials{list-style:none;display:flex;flex-wrap:wrap;gap:12px;padding:0;margin:0}
+.socials a{display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;background:#4A4A4D;color:#fff;transition:background .15s ease,color .15s ease,transform .15s ease}
+.socials a:hover{background:var(--green);color:var(--charcoal);transform:translateY(-2px)}
+.socials svg{width:20px;height:20px;fill:currentColor}
+.socials-small{gap:8px}
+.socials-small a{width:38px;height:38px;background:#3F3F42}
+.socials-small svg{width:16px;height:16px}
+
 /* Footer */
 .site-footer{background:#2C2C2E;color:#C9CACB;padding:28px 0;font-size:14px}
 .footer-inner{display:flex;align-items:center;gap:18px}
@@ -223,5 +233,6 @@ tr.total td{background:var(--green-tint);font-weight:700;border-bottom:0}
   .timeline li{grid-template-columns:1fr;gap:0}
   .contact-list li{grid-template-columns:1fr;gap:2px;font-size:16px}
   .footer-inner{flex-direction:column;text-align:center}
+  .socials-small{justify-content:center}
   td,th{padding:10px}
 }

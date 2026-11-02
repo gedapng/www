@@ -36,6 +36,22 @@ The sharing tags in `index.html` point to `https://gedapng.github.io/www/`. If t
 
 To check the preview, paste the site address into Facebook's Sharing Debugger: https://developers.facebook.com/tools/debug/ and click **Scrape Again** after any change.
 
+## Social media links
+
+The social icons in the **Contact** section and the footer link to:
+
+| Platform | Link |
+|---|---|
+| Facebook | https://www.facebook.com/GEDA.pg |
+| YouTube | https://www.youtube.com/@gedapng |
+| TikTok | https://www.tiktok.com/@gedapng |
+| LinkedIn | https://www.linkedin.com/company/gedapng/ |
+| X | https://x.com/Gedapng |
+
+To change a link, search `index.html` for the old address and replace it. Each link appears **three times**: in the Contact section, in the footer, and in the `sameAs` list near the top, which helps Google connect the website to the social pages.
+
+The icons come from Font Awesome Free 6.5.2 (https://fontawesome.com), licence CC BY 4.0. The credit is kept as a comment in `index.html`.
+
 ## Using your own domain (optional)
 
 If GEDA buys a domain later (for example `geda.org.pg`):
