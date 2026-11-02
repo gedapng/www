@@ -20,7 +20,7 @@ It's a simple static website: plain HTML, CSS and a small JavaScript file. It do
 ## How to put it on GitHub Pages
 
 1. Sign in at **github.com** and click **New repository**.
-2. Name it, for example `geda-website`. Set it to **Public** and click **Create repository**.
+2. Name it `www` (the social sharing tags in `index.html` are set for this name). Set it to **Public** and click **Create repository**.
 3. On the new repository page, click **uploading an existing file**.
 4. Drag **everything inside this folder** into the upload box, including the `assets` folder and the `.nojekyll` file.
    - Tip: `.nojekyll` is a hidden file. On Windows, turn on *View → Show → Hidden items* in File Explorer so you can see it.
@@ -28,7 +28,13 @@ It's a simple static website: plain HTML, CSS and a small JavaScript file. It do
 6. Go to **Settings → Pages**.
 7. Under **Build and deployment**, set **Source** to *Deploy from a branch*, **Branch** to `main`, and the folder to `/ (root)`. Click **Save**.
 8. Wait 1–2 minutes. Your site will be live at:
-   `https://YOUR-GITHUB-USERNAME.github.io/geda-website/`
+   `https://gedapng.github.io/www/`
+
+## Social sharing (Open Graph)
+
+The sharing tags in `index.html` point to `https://gedapng.github.io/www/`. If the address ever changes (new repository name or your own domain), update the `og:url`, `og:image`, `twitter:image` and `canonical` lines at the top of `index.html`.
+
+To check the preview, paste the site address into Facebook's Sharing Debugger: https://developers.facebook.com/tools/debug/ and click **Scrape Again** after any change.
 
 ## Using your own domain (optional)
 
