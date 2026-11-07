@@ -28,11 +28,11 @@ It's a simple static website: plain HTML, CSS and a small JavaScript file. It do
 6. Go to **Settings → Pages**.
 7. Under **Build and deployment**, set **Source** to *Deploy from a branch*, **Branch** to `main`, and the folder to `/ (root)`. Click **Save**.
 8. Wait 1–2 minutes. Your site will be live at:
-   `https://gedapng.github.io/www/`
+   `https://gedapng.org/` (custom domain, see below)
 
 ## Social sharing (Open Graph)
 
-The sharing tags in `index.html` point to `https://gedapng.github.io/www/`. If the address ever changes (new repository name or your own domain), update the `og:url`, `og:image`, `twitter:image` and `canonical` lines at the top of `index.html`.
+The sharing tags in `index.html` point to `https://gedapng.org/`. If the address ever changes (new repository name or your own domain), update the `og:url`, `og:image`, `twitter:image` and `canonical` lines at the top of `index.html`.
 
 To check the preview, paste the site address into Facebook's Sharing Debugger: https://developers.facebook.com/tools/debug/ and click **Scrape Again** after any change.
 
@@ -52,23 +52,18 @@ To change a link, search `index.html` for the old address and replace it. Each l
 
 The icons come from Font Awesome Free 6.5.2 (https://fontawesome.com), licence CC BY 4.0. The credit is kept as a comment in `index.html`.
 
-## Using your own domain (optional)
+## Custom domain: gedapng.org
 
-If GEDA buys a domain later (for example `geda.org.pg`):
+The domain **gedapng.org** is registered with **Cloudflare**. The `CNAME` file in this folder tells GitHub Pages to use it, so don't delete it.
 
-1. In **Settings → Pages → Custom domain**, type the domain and click **Save**.
-2. At the domain provider, add the DNS records that GitHub shows you.
-3. Tick **Enforce HTTPS** once it becomes available.
+**Cloudflare DNS records** (Cloudflare → gedapng.org → DNS → Records). Set every record to **DNS only** (grey cloud):
 
-## How to change the content
+| Type | Name | Content |
+|---|---|---|
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+| CNAME | www | gedapng.github.io |
 
-- To change text, open `index.html` in any text editor (Notepad works) and edit the words between the tags.
-  For example, the phone number is in the **Contact** section near the bottom of the file.
-- To change colours, edit the colour codes at the top of `styles.css` (in the `:root` section).
-- After editing, upload the changed file to GitHub again. The site updates in about a minute.
-
-## Brand rules used
-
-- **Colours:** Leaf Green `#8DC63F`, Charcoal `#3A3A3C`, Slate Grey `#58595B`, White
-- **Fonts:** Montserrat (headings) and Open Sans (body text)
-- **Logo:** the approved vector files only, never retyped or recoloured
+**GitHub:** in the `www` repository, go to **Settings → Pages → Custom domain**, enter `gedapng.org`, click **Save**, and then tick **Enforce HTTPS** when it becomes available.
