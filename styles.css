@@ -236,3 +236,15 @@ tr.total td{background:var(--green-tint);font-weight:700;border-bottom:0}
   .socials-small{justify-content:center}
   td,th{padding:10px}
 }
+
+/* Register now call-to-action (added 2026-11-11) */
+.register-cta{display:flex;align-items:center;gap:28px;background:var(--green-tint);border:2px solid var(--green);border-radius:18px;padding:26px 30px;margin:40px 0 8px}
+.register-cta h3{margin:0 0 8px}
+.register-cta p{margin:0;color:var(--slate)}
+.register-cta .register-cta-k{font-family:var(--head);font-weight:700;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--green-dark);margin:0 0 6px}
+.register-cta .btn{flex:0 0 auto;font-size:16px;padding:15px 30px}
+.site-nav .btn-ghost{color:var(--charcoal)}
+.site-nav .btn-ghost:hover{color:#fff}
+@media (max-width:1000px){.site-nav{gap:18px}}
+@media (max-width:860px){.site-nav .btn + .btn{margin-top:10px}.site-nav .btn-ghost{border-bottom-color:var(--charcoal)}}
+@media (max-width:700px){.register-cta{flex-direction:column;align-items:stretch;padding:22px 20px;gap:18px}}
